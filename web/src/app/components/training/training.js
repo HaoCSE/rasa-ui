@@ -22,6 +22,7 @@ function TrainingController($scope, $rootScope, $interval, $http, Rasa_Status, A
     var agentname = objectFindByKey($scope.agentList, 'agent_id', $scope.agent.agent_id).agent_name;
 
     var id = new XDate().toString('yyyyMMdd-HHmmss');
+    var rasa_api_endpoint = 'http://localhost:5000'
     $http.post(rasa_api_endpoint + "/train?name=" + agentname + "_" + id, JSON.stringify(exportData));
     //Minimize training data
     $scope.exportdata = {};

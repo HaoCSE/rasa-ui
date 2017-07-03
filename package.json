@@ -17,8 +17,8 @@
     "gulp": "^3.9.1"
   },
   "config": {
-    "rasaserver": "http://10.211.55.3:5000",
-    "postgresConnectionString": "postgres://postgres:password@10.211.55.3:5432/rasaui"
+    "rasaserver": "http://localhost:5000",
+    "postgresConnectionString": "postgres://postgres@localhost:5432/rasaui"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
